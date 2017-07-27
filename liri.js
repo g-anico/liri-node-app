@@ -14,8 +14,8 @@ var params = {
 	}
 
 switch (action) {
-	case ''
-}
+	case '' // threw a syntax error due to unfinished switch block.
+} 
 
 //get myTweets function
 function twitter(handle){
@@ -56,7 +56,7 @@ function spotify(){
 			for (var i = 0; i < 10; i++) {
 				if (data.tracks.items[i] != undefined) {
 					console.log('\n--------------------\n');
-					console.log('Artist: ' + data.tracks.items[i].artists[0].name]);
+					console.log('Artist: ' + data.tracks.items[i].artists[0].name); // threw syntax error here for unecessary `]` 
 					console.log('Song: ' + data.tracks.items[i].name);
 					console.log('Album: ' + data.tracks.items[i].album.name);
 					console.log('Preview URL: ' + data.tracks.items[i].preview_url);
